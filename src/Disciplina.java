@@ -1,4 +1,4 @@
-package Trabalho;
+package src;
 public class Disciplina {
     String codigo;
     String nome;

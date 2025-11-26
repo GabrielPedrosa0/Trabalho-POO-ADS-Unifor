@@ -1,4 +1,4 @@
-package Trabalho;
+package src;
 public abstract class Pessoa {
     String nome;
     String cpf;

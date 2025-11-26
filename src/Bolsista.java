@@ -1,4 +1,4 @@
-package Trabalho;
+package src;
 public class Bolsista extends Aluno {
 
     Bolsista(String nome, String cpf, int idade, String matricula){

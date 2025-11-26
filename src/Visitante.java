@@ -1,4 +1,4 @@
-package Trabalho;
+package src;
 public class Visitante extends Pessoa {
     
     Visitante(String nome, String cpf, int idade){

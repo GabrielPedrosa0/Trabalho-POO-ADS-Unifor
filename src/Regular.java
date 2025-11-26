@@ -1,4 +1,4 @@
-package Trabalho;
+package src;
 public class Regular extends Aluno {
     
     Regular(String nome, String cpf, int idade, String matricula){
