@@ -8,6 +8,6 @@ public class Bolsista extends Aluno {
 
     @Override
     public void pagarMensalidade() {
-        System.out.println(nome + " pagou com desconto de 50%");
+        System.out.println(nome + " pagou a mensalidade com um desconto de 50%");
     }
 }

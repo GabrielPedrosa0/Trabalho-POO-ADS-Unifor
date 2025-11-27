@@ -12,6 +12,6 @@ public class Disciplina {
 
     @Override
     public String toString(){
-        return "Disciplina: " + nome + " (Codigo: " + codigo + ")";
+        return  this.nome + " (Código: " + this.codigo + ")";
     }
 }

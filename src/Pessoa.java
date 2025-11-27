@@ -10,7 +10,7 @@ public abstract class Pessoa {
         this.idade = idade;
     }
 
-    // fazer os metodos GET e SET
+    
     public String getNome(){
         return nome;
     }
@@ -37,7 +37,7 @@ public abstract class Pessoa {
 
     public void fezAniversario(){
         idade++;
-        System.out.println(nome + " fez aniversario e esta com " + idade);
+        System.out.println(nome + " fez aniversário e está com " + idade + " anos!");
     }
 
     public void apresentar(){

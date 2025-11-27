@@ -8,7 +8,7 @@ public class Aluno extends Pessoa{
     }
 
     public void pagarMensalidade(){
-        System.out.println(nome + ", pagou a mensalidade!");
+        System.out.println(nome + " pagou a mensalidade!");
     }
 
     @Override
