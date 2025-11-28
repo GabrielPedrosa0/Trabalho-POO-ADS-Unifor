@@ -2,7 +2,7 @@ package src;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("\033[H\033[2J"); System.out.flush();
+        // System.out.print("\033[H\033[2J"); System.out.flush();
 
         Disciplina d1 = new Disciplina("P358", "POO - Programação Orientada a Objetos", 1);
         Disciplina d2 = new Disciplina("R255", "RLA - Raciocínio Lógico Algorítimico", 1);
@@ -13,10 +13,25 @@ public class Main {
         Aluno a2 = new Regular("Cíntia", "68100587125", 24, "A1422");
         Aluno a3 = new Bolsista("Gabriel", "01234567890", 21, "A3243");
 
+        a1.apresentar();
+        a1.fezAniversario();
+
+        a2.apresentar();
+        a2.fezAniversario();
+
+        a3.apresentar();
+        a3.fezAniversario();
+
         Professor p1 = new Professor("Andre", "9846510078453", 45, "Tecnologia");
+
+        p1.apresentar();
+        p1.fezAniversario();
 
         Visitante v1 = new Visitante("Lucas", "8940354876", 32);
         Visitante v2 = new Visitante("Pedro", "0002157489", 55);
+
+        v1.apresentar();
+        v2.apresentar();
        
         Turma t1 = new Turma(d1, p1, "T1-001");
         t1.adicionarAluno(a1);
@@ -32,6 +47,10 @@ public class Main {
         t3.adicionarAluno(a1);
         t3.adicionarAluno(a2);
         t3.adicionarAluno(a3);
+        t3.removerAluno(a2);
+
+
+
 
         System.out.println("--------------------------");
         System.out.println(t1);
@@ -45,15 +64,7 @@ public class Main {
         System.out.println(t3);
         t3.listarAluno();
         
-        a1.fezAniversario();
-        p1.fezAniversario();
-        a1.apresentar();
-        p1.apresentar();
-
-        a1.pagarMensalidade();
-        a3.pagarMensalidade();
-        p1.darAula();
-
+        
         
     }
 }

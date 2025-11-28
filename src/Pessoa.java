@@ -37,14 +37,15 @@ public abstract class Pessoa {
 
     public void fezAniversario(){
         this.idade++;
-        System.out.println(this.nome + " fez aniversário e está com " + this.idade + " anos!");
+        System.out.println(this.nome + " fez aniversário e está com " + this.idade + " anos!" + "\n" + "---------------------------");
     }
 
     public void apresentar(){
         System.out.println(
             "Nome: " + this.nome +
             " | CPF: " + this.cpf + 
-            " | Idade: " + this.idade
+            " | Idade: " + this.idade 
         );
+        
     }
 }
