@@ -7,7 +7,7 @@ public class Visitante extends Pessoa {
 
     @Override
     public void apresentar() {
-        System.out.println(nome + ", está visitando a Universidade!");
-        System.out.println("Seja Bem Vindo!" + nome);
+        System.out.println(this.nome + ", está visitando a Universidade!");
+        System.out.println("Seja Bem Vindo!" + this.nome);
     }
 }

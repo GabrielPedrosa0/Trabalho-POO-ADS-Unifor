@@ -1,8 +1,8 @@
 package src;
 public abstract class Pessoa {
-    String nome;
-    String cpf;
-    int idade;
+    public String nome;
+    private String cpf;
+    private int idade;
 
     Pessoa(String nome, String cpf, int idade){
         this.nome = nome;
@@ -14,13 +14,13 @@ public abstract class Pessoa {
     public String getNome(){
         return nome;
     }
-
+    
     public void setNome(String nome){
         this.nome = nome;
     }
 
     public String getCpf(){
-        return cpf;
+        return this.cpf;
     }
 
     public void setCpf(String cpf){
@@ -28,7 +28,7 @@ public abstract class Pessoa {
     }
 
     public int getIdade(){
-        return idade;
+        return this.idade;
     }
 
     public void setIdade(int idade){
@@ -36,15 +36,15 @@ public abstract class Pessoa {
     }
 
     public void fezAniversario(){
-        idade++;
-        System.out.println(nome + " fez aniversário e está com " + idade + " anos!");
+        this.idade++;
+        System.out.println(this.nome + " fez aniversário e está com " + this.idade + " anos!");
     }
 
     public void apresentar(){
         System.out.println(
-            "Nome: " + nome +
-            " | CPF: " + cpf + 
-            " | Idade: " + idade
+            "Nome: " + this.nome +
+            " | CPF: " + this.cpf + 
+            " | Idade: " + this.idade
         );
     }
 }

@@ -8,11 +8,11 @@ public class Professor extends Pessoa{
     }
 
     public void darAula(){
-        System.out.println(nome + " diz: Olá, turma. Vamos dar início à aula?");
+        System.out.println(this.nome + " diz: Olá, turma. Vamos dar início à aula?");
     }
 
     @Override
     public String toString(){
-        return  nome + " (Centro: " + centro + ")";
+        return  this.nome + " (Centro: " + this.centro + ")";
     }
 }

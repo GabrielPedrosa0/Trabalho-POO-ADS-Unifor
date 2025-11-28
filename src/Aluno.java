@@ -8,11 +8,11 @@ public class Aluno extends Pessoa{
     }
 
     public void pagarMensalidade(){
-        System.out.println(nome + " pagou a mensalidade!");
+        System.out.println(this.nome + " pagou a mensalidade!");
     }
 
     @Override
     public String toString(){
-        return nome;
+        return this.nome;
     }
 }

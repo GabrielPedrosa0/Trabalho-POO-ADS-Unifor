@@ -7,6 +7,6 @@ public class Regular extends Aluno {
 
     @Override
     public void pagarMensalidade() {
-        System.out.println(nome + " pagou a mensalidade integral!");
+        System.out.println(this.nome + " pagou a mensalidade integral!");
     }
 }
