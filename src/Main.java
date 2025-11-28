@@ -2,7 +2,6 @@ package src;
 
 public class Main {
     public static void main(String[] args) {
-        // System.out.print("\033[H\033[2J"); System.out.flush();
 
         Disciplina d1 = new Disciplina("P358", "POO - Programação Orientada a Objetos", 1);
         Disciplina d2 = new Disciplina("R255", "RLA - Raciocínio Lógico Algorítimico", 1);
@@ -49,9 +48,6 @@ public class Main {
         t3.adicionarAluno(a3);
         t3.removerAluno(a2);
 
-
-
-
         System.out.println("--------------------------");
         System.out.println(t1);
         t1.listarAluno();
@@ -63,9 +59,7 @@ public class Main {
         System.out.println("--------------------------");
         System.out.println(t3);
         t3.listarAluno();
-        
-        
-        
+
     }
 }
 

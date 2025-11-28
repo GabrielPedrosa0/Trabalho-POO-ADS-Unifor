@@ -7,14 +7,11 @@ public class Turma {
     public Professor professor;
     public ArrayList <Aluno> alunos = new ArrayList<>();
 
-
     Turma(Disciplina disciplina, Professor professor, String codigo){
         this.disciplina = disciplina;
         this.professor = professor;
         this.codigo = codigo;
     }
-
-
 
     public void adicionarAluno(Aluno aluno){
         alunos.add(aluno);
@@ -36,7 +33,5 @@ public class Turma {
     public String toString(){
         return "Turma: " + this.codigo + "\n" + "Professor: " + this.professor + "\n" + "Disciplina: " + this.disciplina; 
     }
-
-
 
 }
